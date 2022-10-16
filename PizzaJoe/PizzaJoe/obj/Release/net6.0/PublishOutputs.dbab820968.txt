@@ -1,0 +1,8 @@
+C:\Users\shivtej.deshmukh\source\repos\PizzaJoe\PizzaJoe\obj\Release\net6.0\PubTmp\Out\PizzaJoe.exe
+C:\Users\shivtej.deshmukh\source\repos\PizzaJoe\PizzaJoe\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\shivtej.deshmukh\source\repos\PizzaJoe\PizzaJoe\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\shivtej.deshmukh\source\repos\PizzaJoe\PizzaJoe\obj\Release\net6.0\PubTmp\Out\PizzaJoe.dll
+C:\Users\shivtej.deshmukh\source\repos\PizzaJoe\PizzaJoe\obj\Release\net6.0\PubTmp\Out\PizzaJoe.deps.json
+C:\Users\shivtej.deshmukh\source\repos\PizzaJoe\PizzaJoe\obj\Release\net6.0\PubTmp\Out\PizzaJoe.runtimeconfig.json
+C:\Users\shivtej.deshmukh\source\repos\PizzaJoe\PizzaJoe\obj\Release\net6.0\PubTmp\Out\PizzaJoe.pdb
+C:\Users\shivtej.deshmukh\source\repos\PizzaJoe\PizzaJoe\obj\Release\net6.0\PubTmp\Out\Newtonsoft.Json.dll

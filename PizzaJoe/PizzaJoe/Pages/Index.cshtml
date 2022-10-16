@@ -1,0 +1,29 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <H1> Welcome to Joe's Pizza</H1>
+</div>
+
+<br />
+
+<div class="container d-flex flex-wrap">
+
+    @foreach (var product in Model.pizzaProducts)
+    {
+
+        <div class="card mx-auto" style="width: 19rem; margin-bottom:15px;">
+            <img class="card-img-top" src="~/images/@product.Photo" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">@product.Name</h4>
+                <p class="card-text">Price : ₹ @product.Price</p>
+               <a id="buynow" class="btn btn-primary" asp-page="cart" asp-page-handler="buynow" asp-route-id="@product.Id">Buy Now</a>
+
+            </div>
+        </div>
+    }
+</div>
+

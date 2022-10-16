@@ -1,0 +1,49 @@
+﻿@page
+@model CartModel
+@{
+    ViewData["Title"] = "Cart";
+}
+<h1>@ViewData["Title"]</h1>
+
+<form method="post" asp-page="cart" asp-page-handler="update">
+        <table class="table table-bordered table-striped" style="width:80%" align="center">
+        <tr align="center">
+            <th>Remonve Item</th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Photo</th>
+            <th>Price</th>
+            <th>Quantity <br /> <input class="btn btn-warning" type="submit" value="Update" /></th>
+            <th>Sub Total</th>
+        </tr>
+        @foreach (var item in Model.cart)
+        {
+            <tr align="center">
+                <td align="center">
+                    <a class="btn btn-danger" asp-page="cart" asp-page-handler="delete" asp-route-id="@item.Product.Id">Remove</a>
+                </td>
+                <td>@item.Product.Id</td>
+                <td>@item.Product.Name</td>
+                <td><img src="~/images/@item.Product.Photo" width="140" height="140" /></td>
+                <td>₹@item.Product.Price</td>
+                <td><input type="number" name="quantities" value="@item.Quantity" min="1" style="width: 50px;" /></td>
+                <td>
+                    ₹@(item.Product.Price * item.Quantity)
+                </td>
+            </tr>
+        }
+        <tr>
+            <td colspan="6" align="right">Total</td>
+            <td align="center">₹@Model.Total</td>
+        </tr>
+    </table>
+</form>
+
+<div align="right">
+    <a class="btn btn-success" style="margin:5px" asp-page="index">Continue Shopping</a>
+    <br />
+    <a class="btn btn-primary" style="margin:5px" asp-page="Checkout">Pay Now</a>
+
+</div>
+
+    
